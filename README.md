@@ -63,13 +63,18 @@ sentiment_score = blob.sentiment.polarity
 The code includes functionality to change the language, demonstrated with "te-IN" for Telugu.
 
 text = recognizer.recognize_google(audio, language="te-IN")
-## ✅ Output Examples
+## ✅ Output:
 Input Speech: "I love this weather!"
+
 Recognized Text: "I love this weather!"
-Sentiment: Positive
+
+Sentiment: **Positive**
+
 Input Speech: "This is terrible."
+
 Recognized Text: "This is terrible."
-Sentiment: Negative
+
+Sentiment: **Negative**
 ## 🧾 Conclusion
 This project showcases how to bridge audio input and textual sentiment analysis using Python. It demonstrates a simple yet powerful approach for enabling human-computer interaction via voice and supports multiple languages for broader usability. Future improvements can include:
 
