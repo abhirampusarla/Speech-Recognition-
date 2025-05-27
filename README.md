@@ -15,6 +15,28 @@ SpeechRecognition – To convert speech to text.
 TextBlob – For sentiment polarity analysis.
 Google Speech API – As the backend recognizer.
 Microphone (input device)
+
+## 💻 How to Use the Script speech_recognition.py
+Install the required libraries (if not already installed):
+pip install SpeechRecognition textblob pyaudio
+Note: On some systems, you may need to install pyaudio separately using system-level commands:
+### For Windows:
+pip install pipwin
+pipwin install pyaudio
+
+### For Mac/Linux (via Homebrew or apt):
+brew install portaudio
+pip install pyaudio
+#### Run the script from the terminal or your IDE:
+python speech_recognition.py
+### Follow the prompt: Speak when you see the message Speak something....
+#### The script will:
+Record your speech.
+Convert it into text using Google's speech recognition engine.
+Analyze and display whether the sentiment is positive, negative, or neutral.
+To use a different language (like Telugu), ensure the line in your script looks like this:
+text = recognizer.recognize_google(audio, language="te-IN")
+
 ## 🧪 Implementation
 ### 1. Audio Recording
 
